@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "lint": "eslint ./**/*.js",
-    "test": "nyc mocha -t 5000 --exit ./test/**/*.js",
+    "test": "nyc mocha -t 5000 --exit './test/**/*.js'",
     "coverage": "npm run test && nyc report --reporter=html",
     "patch": "np patch --yolo",
     "minor": "np minor --yolo",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "hemera-plugin": "^1.3.0",
-    "node-nats-streaming": "^0.0.28"
+    "node-nats-streaming": "^0.0.41"
   },
   "devDependencies": {
     "code": "^3.0.2",
